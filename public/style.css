@@ -1,0 +1,247 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.item{
+    padding:10px;
+    margin: 10px;
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 40%;
+    cursor:pointer;
+    height: 90px;
+    border: 2px rgb(248, 248, 248) solid;
+}
+
+.button_title{
+    align-self: center;
+}
+
+.icon{
+    height:50px;
+}
+.submit{
+    width: 15%;
+    height: 50px;
+    cursor: pointer;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius:100px;
+    background-color: rgb(9, 9, 70);
+    color: white;
+    font-size: large;
+}
+
+#map{
+    height: 80vh;
+    /* The height is 400 pixels */
+    width: 50%;
+    /* The width is the width of the web page */
+    border: 2px white solid;
+    border-radius:13px;
+}
+
+.near{
+    background-color: #0000a1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 423px;
+    margin: auto;
+    border: 2px white solid;
+    border-radius: 16px;
+    display: none;
+}
+.text{
+    color:white;
+    text-align: center;
+    font-weight: 500;
+}
+.icon img{
+    width:50px;
+}
+
+.user_buttons{
+    height:83vh;
+}
+
+.user_buttons button{
+    margin: 10px auto;
+    height: 76px;
+    /*width: 206px;*/
+} 
+
+.user_type{
+    margin:15px auto;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+    font-weight:500;
+    color: #090357;
+}
+
+
+.buttons{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.info_container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 560px;
+    margin-top: 30px;
+}
+
+.info_container ul{
+    margin: 10px;
+}
+
+.button_p{
+    margin: 10px ;
+    padding: 11px;
+    height: 57px;
+    border: solid white 2px;
+    border-radius: 9px;
+    background-color: #fd7676;
+    font-family: system-ui;
+    font-weight: 500;
+    width: 166px;
+    padding-left: 33px;
+    cursor: pointer;
+}
+
+.choice_btn{
+    width: 300px;
+    padding: 10px 20px;
+	border-radius: 6px;
+	border-width: 2px;
+	border-style: solid;
+	font-size: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	cursor: pointer;
+	transition: 0.5s ease;
+    color: #FFF;
+    background: #003d6e;
+    border-color: #003d6e;
+    padding: 10px 30px;
+}
+
+.choice_btn:hover{
+    color: #003d6e;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+/* .bright{
+    padding :10px 40px;
+}
+
+.bleft{
+    padding-left: 25px;
+} */
+
+.details{
+    background-color: rgb(249, 99, 99);
+    border: 2px solid rgb(249, 99, 99);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    width: 350px;
+}
+
+.details p{
+    padding: 5px;
+}
+
+#floating-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 5px;
+}
+
+.options{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.options b{
+    width:35px;
+}
+
+.options select{
+    width:250px;
+    border: 2px rgb(255, 255, 255) solid;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.floating-item{
+    padding:10px;
+}
+
+#confirm-text{
+    color: rgb(255, 44, 44);
+}
+
+.chosen-green{
+    background-color: rgb(99, 235, 99);
+    color: rgb(250, 250, 250);
+}
+
+#loading-spinner{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.hidden{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.title{
+    margin: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SAL Maps - Path generation</title>
+</head>
+
+<body>
+    <p class="title">Path generation: Enter the source and destination</p>
+    
+    <div class="container">
+        <div class="item" id="floating-panel">
+            <div class="options">
+                <b class="floating-item">Start: </b>
+                <select class="floating-item" id="start">
+                    <option value="{13.011053,77.554939}">Orion Mall</option>
+                    <option value="{13.0283,77.5731}">Truffles</option>
+                    <option value="{13.0328,77.5697}">Milanos</option>
+                </select>
+            </div>
+            <div class="options">
+                <b class="floating-item">End: </b>
+                <select class="floating-item" name="end" id="end">
+                    <option value="{13.0306,77.5649}">Ramaiah Institute of technology</option>
+                    <option value="{13.035781,77.597008}">Hebbal</option>
+                    <option value="{13.0665,77.5980}">Skyline Beverly Park</option>
+                </select>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="button_p" id="amb">Move User</button>
+            <!-- <button class="button_p" id="switch"><a href = "../ambulance-server/client_side/ambulance.html">Back to ambulance view      </a></button> -->
+        </div>
+        <div class="near" id="endj">
+            <div class="text">
+                <p class="alert">You have arrived at your destination</p>
+            </div>
+        </div>
+        <div class="near" id="near">
+            <div class="icon">
+                <img src="images/ambulance_logo.png" alt="">
+            </div>
+            <div class="text">
+                <p class="alert">Alert!</p>
+                <p class="alert">Please make way to the right</p>
+                <p class="alert">Emergency services need this path</p>
+            </div>
+            <div class="icon">
+                <img src="images/right_arrow.png" alt="">
+            </div>
+        </div>
+        <div class="item" id="map"></div>
+    </div>
+
+    <script type="text/javascript" src="../user-side-server/server.js"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcQSmBY1QhFLMcfDHsIFp5YEgdj6I_Ge8&callback=initMap&v=weekly"
+        async></script>
+    <script src="path.js"></script>
+   
+</body>
+
+</html>
